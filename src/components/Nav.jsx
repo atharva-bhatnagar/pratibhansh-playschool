@@ -4,14 +4,14 @@ const Nav = () => {
   return (
     <div className="navbar">
       <ul className="nav-content">
-        <li>cat1</li>
-        <li>cat2</li>
-        <li>cat3</li>
-        <li>cat4</li>
-        <li>cat5</li>
-        <li>cat6</li>
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Academics</li>
+        <li>Activities</li>
+        <li>Works</li>
+        <li>Gallery</li>
         <li>cat7</li>
-        <li>cat8</li>
+        <li>Contact Us</li>
       </ul>
     </div>
   );
