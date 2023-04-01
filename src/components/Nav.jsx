@@ -8,9 +8,8 @@ const Nav = () => {
         <li>About Us</li>
         <li>Academics</li>
         <li>Activities</li>
-        <li>Works</li>
+        <li>Fee Structure</li>
         <li>Gallery</li>
-        <li>cat7</li>
         <li>Contact Us</li>
       </ul>
     </div>

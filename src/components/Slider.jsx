@@ -1,6 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const Slider = () => {
+  // const interval = setInterval(() => {
+  //   increment();
+  // }, 2000);
+  const timeoutRef = useRef(null);
+  function resetTimeout() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  }
   const imgArr = [
     {
       url: "images/about.jpg",
@@ -40,6 +49,21 @@ const Slider = () => {
       setImage(imgArr.length - 1);
     }
   };
+  useEffect(() => {
+    resetTimeout();
+    timeoutRef.current = setTimeout(
+      () =>
+        setImage((prevIndex) =>
+          prevIndex === imgArr.length - 1 ? 0 : prevIndex + 1
+        ),
+
+      2000
+    );
+
+    return () => {
+      resetTimeout();
+    };
+  }, [image]);
 
   useEffect(() => {
     const banner = document.getElementById("banner");
