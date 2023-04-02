@@ -2,7 +2,7 @@ import React from "react";
 
 const FeeStucturePage = () => {
   return (
-    <div>
+    <div className="static-data">
       <h1>Fee Structure</h1>
       <p>
         Welcome to Pratibhansh Play School, where we provide a nurturing and

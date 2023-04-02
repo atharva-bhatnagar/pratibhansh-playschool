@@ -2,7 +2,7 @@ import React from "react";
 
 const ActivitiesPage = () => {
   return (
-    <div>
+    <div className="static-data">
       <h1>Co-Curricular Activities</h1>
       <p>
         Welcome to Pratibhansh Play School, where we provide a nurturing and

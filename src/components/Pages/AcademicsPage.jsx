@@ -2,7 +2,7 @@ import React from "react";
 
 const AcademicsPage = () => {
   return (
-    <div>
+    <div className="static-data">
       <h1>Academics</h1>
       <p>
         Sure, here's a sample catalogue of academic activities that a play
