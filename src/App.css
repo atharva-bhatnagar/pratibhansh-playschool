@@ -276,6 +276,7 @@ strong{
 .about p{
   width: 60%;
   margin-top: 30px;
+  min-width: 320px;
 }
 .about button{
   padding: 4px 8px;
