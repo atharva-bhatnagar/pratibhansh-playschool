@@ -17,7 +17,7 @@ const Footer = () => {
             placeholder="Message"
             name="Message"
             rows="4"
-            cols="50"
+            cols="40"
             required
           />
           <button type="submit">Send</button>

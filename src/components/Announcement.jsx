@@ -33,7 +33,7 @@ We are excited to inform you that our school will be organizing a trip to the lo
   ];
   return (
     <div className="announcement">
-      <h1>Announcements/Notice</h1>
+      <h1>Announcements</h1>
       {announcements.map((a) => {
         return (
           <div className="announcement-card">
