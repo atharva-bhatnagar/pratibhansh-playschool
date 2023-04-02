@@ -41,7 +41,7 @@ const About = () => {
         become responsible citizens and future leaders.`;
   const [hide, setHide] = useState(true);
   return (
-    <div className="about">
+    <div className="about" id="about">
       <h1>Why Choose Us</h1>
       <p>{hide ? dataIncomplete : aboutContent}</p>
       <button

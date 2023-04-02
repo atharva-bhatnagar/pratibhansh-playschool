@@ -1,4 +1,5 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
 
 const HeroSec = () => {
   return (
@@ -10,6 +11,14 @@ const HeroSec = () => {
           <p>Basic Address like c-7007 sector 13 Rajajipuram Lucknow</p>
           <strong>SampleEmail.com@gmail.com</strong>
         </div>
+      </div>
+      <div className="marquee-cont">
+        <Marquee>
+          <h1>Admisions Open</h1>
+        </Marquee>
+        <Marquee>
+          <p>Admissions are open for classes 1 to 5</p>
+        </Marquee>
       </div>
     </div>
   );

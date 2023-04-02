@@ -25,8 +25,9 @@ const Header = () => {
     "December",
   ];
   let d = new Date();
+  console.log(d.getDay());
   let date =
-    week[d.getDay() - 1] +
+    week[d.getDay()] +
     ", " +
     months[d.getMonth()] +
     " " +
@@ -41,7 +42,20 @@ const Header = () => {
   return (
     <div className="header">
       <div>{date + " " + time}</div>
-      <div>content two</div>
+      <div>
+        {/* <button
+          className="admin-btn"
+          onClick={() => {
+            alert("In order to access admin panel authentication is needed");
+          }}
+        >
+          Admin Panel
+        </button> */}
+
+        <a href="#contact">
+          <button className="admin-btn">Mail Us</button>
+        </a>
+      </div>
     </div>
   );
 };

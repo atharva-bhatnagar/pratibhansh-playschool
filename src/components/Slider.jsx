@@ -77,7 +77,7 @@ const Slider = () => {
           decrement();
         }}
       >
-        previous
+        &lt;
       </button>
       <div id="banner">
         <p className="banner-text">{imgArr[image].text}</p>
@@ -87,7 +87,7 @@ const Slider = () => {
           increment();
         }}
       >
-        next
+        &gt;
       </button>
     </div>
   );

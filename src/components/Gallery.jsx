@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-const Gallery = () => {
+const Gallery = ({ nav }) => {
   const timeoutRef = useRef(null);
   function resetTimeout() {
     if (timeoutRef.current) {
@@ -31,12 +31,12 @@ const Gallery = () => {
     };
   }, [image]);
   return (
-    <div className="gallery">
+    <div className="gallery" id="gallery">
       <h1>GALLERY</h1>
-      <ul className="gallery-head">
+      {/* <ul className="gallery-head">
         <li>Photos</li>
         <li>Videos</li>
-      </ul>
+      </ul> */}
       <div className="img-container">
         <img className="enlarged-img" alt="enlarged" src={imgArr[image]} />
         <div className="img-grid">
@@ -49,7 +49,9 @@ const Gallery = () => {
           })}
         </div>
       </div>
-      <h4>View All +</h4>
+      <h4 style={{ cursor: "pointer" }} onClick={() => nav("/Gallery")}>
+        View All +
+      </h4>
     </div>
   );
 };

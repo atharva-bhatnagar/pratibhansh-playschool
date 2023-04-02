@@ -1,6 +1,6 @@
 import React from "react";
 
-const Announcement = ({ nav }) => {
+const AnnouncementPage = () => {
   const announcements = [
     {
       date: "MARCH 19",
@@ -23,13 +23,27 @@ We are excited to inform you that our school will be organizing a trip to the lo
 
 We are excited to inform you that our school will be organizing a trip to the local zoo on [insert date]. This trip is a great opportunity for our students to learn about different animals and their habitats, and to appreciate the beauty and diversity of nature."`,
     },
-    //     {
-    //       date: "MARCH 22",
-    //       heading: "Announcement 4",
-    //       content: `"this is the fourth announcement" Dear Parents and Guardians,
+    {
+      date: "MARCH 19",
+      heading: "Announcement 1",
+      content: `this is the first announcement Dear Parents and Guardians,
 
-    // We are excited to inform you that our school will be organizing a trip to the local zoo on [insert date]. This trip is a great opportunity for our students to learn about different animals and their habitats, and to appreciate the beauty and diversity of nature.`,
-    //     },
+We are excited to inform you that our school will be organizing a trip to the local zoo on [insert date]. This trip is a great opportunity for our students to learn about different animals and their habitats, and to appreciate the beauty and diversity of nature.`,
+    },
+    {
+      date: "MARCH 20",
+      heading: "Announcement 2",
+      content: `"this is the second announcement" Dear Parents and Guardians,
+
+We are excited to inform you that our school will be organizing a trip to the local zoo on [insert date]. This trip is a great opportunity for our students to learn about different animals and their habitats, and to appreciate the beauty and diversity of nature.`,
+    },
+    {
+      date: "MARCH 21",
+      heading: "Announcement 3",
+      content: `"this is the third announcement Dear Parents and Guardians,
+
+We are excited to inform you that our school will be organizing a trip to the local zoo on [insert date]. This trip is a great opportunity for our students to learn about different animals and their habitats, and to appreciate the beauty and diversity of nature."`,
+    },
   ];
   return (
     <div className="announcement">
@@ -45,10 +59,7 @@ We are excited to inform you that our school will be organizing a trip to the lo
           </div>
         );
       })}
-      <button onClick={() => nav("/Announcement")}>
-        View All Announcements
-      </button>
     </div>
   );
 };
-export default Announcement;
+export default AnnouncementPage;
